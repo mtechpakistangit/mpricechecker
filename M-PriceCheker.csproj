@@ -70,21 +70,25 @@
 	  <None Remove="Resources\Fonts\Poppins-Thin.ttf" />
 	  <None Remove="Resources\Images\balance.png" />
 	  <None Remove="Resources\Images\code.svg" />
+	  <None Remove="Resources\Images\eye.svg" />
 	  <None Remove="Resources\Images\icon.png" />
 	  <None Remove="Resources\Images\ingredients.svg" />
 	  <None Remove="Resources\Images\invisible.svg" />
 	  <None Remove="Resources\Images\ip.svg" />
 	  <None Remove="Resources\Images\load.svg" />
+	  <None Remove="Resources\Images\lock.svg" />
 	  <None Remove="Resources\Images\mail.svg" />
 	  <None Remove="Resources\Images\port.svg" />
 	  <None Remove="Resources\Images\scan.svg" />
 	  <None Remove="Resources\Images\scaner.svg" />
 	  <None Remove="Resources\Images\scanner.svg" />
 	  <None Remove="Resources\Images\setting.png" />
+	  <None Remove="Resources\Images\settings.svg" />
 	  <None Remove="Resources\Images\shelf.svg" />
 	  <None Remove="Resources\Images\splash.svg" />
 	  <None Remove="Resources\Images\upload.svg" />
 	  <None Remove="Resources\Images\user.svg" />
+	  <None Remove="Resources\Images\user_login.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -96,6 +100,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MVVM\views\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\views\settings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

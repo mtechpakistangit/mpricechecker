@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("M-PriceCheker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f17f1afe91e3dd552feecc8cc7c89a7bc4f829c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("M-PriceCheker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("M-PriceCheker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

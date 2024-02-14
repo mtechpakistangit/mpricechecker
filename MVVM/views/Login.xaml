@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="M_PriceCheker.MVVM.views.Login"
+               NavigationPage.HasNavigationBar ="False"
+             Title="Login">
+
+    <Grid RowDefinitions="Auto,Auto" Scale=".95" >
+        <Border Stroke="#cbcbcb" StrokeThickness="4" HeightRequest="200" WidthRequest="400" >
+             <Border.StrokeShape >
+                <RoundRectangle CornerRadius="30,30,0,0"/>
+            </Border.StrokeShape>
+            
+            <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="400,200">
+                <Label VerticalTextAlignment="Center" HorizontalOptions="Center"
+                  Grid.Column="0"
+                       Grid.Row="0"
+                       Margin="0,50,0,0"
+                      FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="mPrice" FontSize="40"
+                        FontFamily="LeagueSpartan-Bold" 
+                           TextColor="Red">
+                              
+
+
+
+                            </Span>
+                            <Span Text="Checker" FontSize="40"
+                        FontFamily="LeagueSpartan-Bold"
+                        TextColor="{StaticResource baseColor}"/>
+                        </FormattedString>
+                        
+                        
+                    </Label.FormattedText>
+
+                    <Label.Shadow>
+                        <Shadow Brush="{StaticResource baseColor}"
+                          Offset="5,5"
+                               Radius="0"
+                                Opacity="0.5" />
+                    </Label.Shadow>
+                </Label>
+
+
+                <Label VerticalTextAlignment="Center" HorizontalOptions="Center"
+         Grid.Column="0"
+              Grid.Row="1"
+                      
+              Margin="0,0,0,0"
+             FontSize="Large">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Part of" FontSize="20"
+               FontFamily="LeagueSpartan-Bold" 
+                  TextColor="{StaticResource baseColor}"/>    
+                            
+                            <Span Text=" m" FontSize="20"
+               FontFamily="LeagueSpartan-Bold" 
+                  TextColor="Red"/>
+                            
+                            
+                            
+                            <Span Text="Smart Series" FontSize="20"
+               FontFamily="LeagueSpartan-Bold"
+               TextColor="{StaticResource baseColor}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+
+                    <Label.Shadow>
+                        <Shadow Brush="{StaticResource Black}"
+        Offset="5,5"
+             Radius="5"
+              Opacity="0.8" />
+                    </Label.Shadow>
+                </Label>
+
+            </Grid>
+
+
+            <!--BackgroundColor="{StaticResource baseColor}"-->
+        </Border>
+        <BoxView Grid.Row="0" VerticalOptions="End" HeightRequest="6" Color="Gray" WidthRequest="395" />
+        <Border  Grid.Row="1"   Stroke="{StaticResource baseColor}" HeightRequest="300" WidthRequest="395" StrokeThickness="-2" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="-0.2,.4">
+                    <GradientStop Color="{StaticResource baseColor}"
+                          Offset=".9" />
+                    <GradientStop Color="#7bdff5"
+                          Offset="0.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="0,0,30,30"/>
+            </Border.StrokeShape>
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="400,300,200">
+                <Label Grid.Row="0" Grid.Column="0" Text="Login your Account" FontFamily="Poppins" FontSize="18" FontAttributes="Bold" Margin="15" TextColor="white"/>
+
+                <Label Grid.Row="1" Grid.Column="0"  Text="Name" FontFamily="Poppins" FontSize="15" FontAttributes="Bold" Margin="20,0,0,0" TextColor="white"/>
+                <Border Grid.Row="2" Grid.Column="0" Margin="15,5,0,0" HorizontalOptions="Start" HeightRequest="50" WidthRequest="300" Background="White">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="9"/>
+                       
+                    </Border.StrokeShape>
+                    <Grid RowDefinitions="Auto" ColumnDefinitions="40,100">
+                        <Image Grid.Row="0" Grid.Column="0" Source="user_login.png" Margin="10,-15,0,0" HeightRequest="30" HorizontalOptions="Start"/>
+
+                        <Entry Grid.Row="0" Grid.Column="1" x:Name="txtName"   HorizontalOptions="Start" TextColor="Gray" FontFamily="Poppins" FontAttributes="Bold" VerticalTextAlignment="Start" Margin="0,05,0,0" HeightRequest="60" WidthRequest="200"/>
+                    </Grid>
+                    
+                    
+                    
+                </Border>
+
+                <Grid Grid.Row="3" HeightRequest="10">
+
+                </Grid>
+
+                <Label Grid.Row="4" Grid.Column="0"  Text="Password" FontFamily="Poppins" FontSize="15" FontAttributes="Bold" Margin="20,0,0,0" TextColor="white"/>
+                <Border Grid.Row="5" Grid.Column="0" Margin="15,5,0,0" HorizontalOptions="Start" HeightRequest="50" WidthRequest="300" Background="White">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="9"/>
+
+                    </Border.StrokeShape>
+                    <Grid RowDefinitions="Auto" ColumnDefinitions="40,100,150">
+                        <Image Grid.Row="0" Grid.Column="0" Source="lock.png" Margin="10,-15,0,0" HeightRequest="30" HorizontalOptions="Start"/>
+
+                        <Entry Grid.Row="0" Grid.Column="1" IsPassword="True" x:Name="txtpassword" HorizontalOptions="Start" TextColor="Gray" FontFamily="Poppins" FontAttributes="Bold" VerticalTextAlignment="Start" Margin="0,05,0,0" HeightRequest="60" WidthRequest="200"/>
+                        <ImageButton Grid.Row="0" Grid.Column="2" Margin="10,-5,0,0" x:Name="btnEye" HeightRequest="25" HorizontalOptions="End" Source="eye.png" Clicked="btnEye_Clicked"/>
+
+                    </Grid>
+
+                 
+
+                </Border>
+
+
+                <Button Grid.Row="6" Grid.Column="0" Text="Log in"
+                        x:Name="btnSave"
+                       Style="{StaticResource btnStyle}"
+                        Margin="0,20,0,0" 
+                        CornerRadius="0"
+           TextColor="{StaticResource baseColor}"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                      FontFamily="Poppins"
+                        CharacterSpacing="1.5"
+                       BackgroundColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                       >
+                    <Button.Shadow>
+                        <Shadow Brush="Black"
+                            Offset="0,05"
+                            Radius="10"
+                            Opacity=".5" />
+                    </Button.Shadow>
+                </Button>
+
+            </Grid>
+            
+            
+        </Border>
+        
+        
+    </Grid>
+    
+    
+</ContentPage>

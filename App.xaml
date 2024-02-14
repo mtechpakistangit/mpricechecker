@@ -9,6 +9,26 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="baseColor">#43C0DB</Color>
+
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,-5" />
+                <Setter Property="PlaceholderColor" Value="Black" />
+                <Setter Property="FontFamily" Value="Poppins-Light" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="btnStyle" TargetType="Button">
+                <Setter Property="FontFamily" Value="Poppins-Bold" />
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="{StaticResource  baseColor}" />
+                <Setter Property="ContentLayout" Value="Left, 5" />
+                <Setter Property="Padding" Value="3" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="CornerRadius" Value="10" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

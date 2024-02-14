@@ -11,4 +11,15 @@ public partial class settings : ContentPage
     {
 
     }
+
+    private void btnSave_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Login());
+
+    }
+
+    private void btnUpload_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
